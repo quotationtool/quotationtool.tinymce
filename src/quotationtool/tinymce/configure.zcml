@@ -1,0 +1,23 @@
+<configure
+    xmlns='http://namespaces.zope.org/zope'
+    xmlns:browser='http://namespaces.zope.org/browser'>
+
+  <include file="dependencies.zcml"/>
+
+  <browser:resourceDirectory
+      name="tinymce"
+      directory="tinymce"
+      layer="quotationtool.skin.interfaces.IQuotationtoolBrowserLayer"
+      />
+
+  <resourceLibrary
+      name="quotationtool.tinymce"
+      layer="quotationtool.skin.interfaces.IQuotationtoolBrowserLayer"
+      >
+    <directory
+	source="tinymce/jscripts/tiny_mce"
+	include="tiny_mce_src.js"
+	/>
+  </resourceLibrary>
+
+</configure>
