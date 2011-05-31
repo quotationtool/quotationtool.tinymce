@@ -11,7 +11,18 @@
       />
 
   <resourceLibrary
+      name="quotationtool.tinymce.languages"
+      layer="quotationtool.skin.interfaces.IQuotationtoolBrowserLayer"
+      >
+    <directory
+	source="js"
+	include="available_languages.js"
+	/>
+  </resourceLibrary>
+
+  <resourceLibrary
       name="quotationtool.tinymce"
+      require="quotationtool.tinymce.languages"
       layer="quotationtool.skin.interfaces.IQuotationtoolBrowserLayer"
       >
     <directory
